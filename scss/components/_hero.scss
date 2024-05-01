@@ -1,0 +1,37 @@
+.hero {
+  background-image: url(/img/hero.png);
+  width: 1680px;
+  height: 925px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-left: -117px;
+}
+
+.button-hero {
+  width: 280px;
+  height: 68px;
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  box-shadow: inset 0px 4px 10px 0px rgba(255, 255, 255, 0.5),
+    inset 0px -4px 10px 0px rgba(255, 255, 255, 0.5);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(82, 82, 82),
+    rgb(40, 40, 40) 100%
+  );
+  transform: rotate(-3.00deg);
+  margin-top: 600px;
+  margin-left: 730px;
+}
+
+.text-hero {
+  color: rgb(255, 255, 255);
+  font-family: Krona One;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.text-hero a {
+  color: #fff;
+}

@@ -1,0 +1,24 @@
+.card-list {
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+}
+
+.cards {
+  width: 370px;
+  height: 532px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  padding: 12px;
+  margin-top: 28px;
+}
+
+.text-card-item {
+  color: rgb(8, 28, 0);
+  font-family: Krona One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 48px;
+}

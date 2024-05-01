@@ -1,0 +1,110 @@
+.footer {
+  width: 1540px;
+  height: 618px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  margin-top: 68px;
+  margin-left: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.all-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-footer {
+  border-radius: 30px;
+  background: rgb(245, 245, 245);
+  width: 856px;
+  height: 504px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.card-list-footer {
+  width: 836px;
+  height: 138px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  padding: 8px;
+  column-gap: 8px;
+}
+
+.card-footer {
+  width: 199px;
+  height: 122px;
+  border-radius: 12px;
+  background: rgb(245, 245, 245);
+}
+
+.text-footer {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(8, 28, 0);
+  font-family: Krona One;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-footer {
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  width: 836px;
+  height: 335px;
+  margin-top: 12px;
+  padding-left: 263px;
+  align-items: center;
+  padding-top: 96px;
+}
+
+.footer-contact-text {
+  color: rgb(8, 28, 0);
+  font-family: Krona One;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 310px;
+  text-align: center;
+}
+
+.button-contact {
+  width: 310px;
+  border: none;
+  border-radius: 150px;
+  padding: 12px 40px 12px 40px;
+  background-color: rgb(135, 228, 100);
+  color: rgb(8, 28, 0);
+  font-family: Krona One;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+.footer-data {
+  width: 1500px;
+  height: 64px;
+  background-color: rgb(135, 228, 100);
+  border-radius: 30px;
+  margin-top: 10px;
+  display: flex;
+  padding: 0 40px;
+  padding-top: 20px;
+}
+
+.left-data-footer {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-data-text {
+  color: rgb(8, 28, 0);
+  font-family: Krona One;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
