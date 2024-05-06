@@ -31,11 +31,11 @@ if (!event.target.matches('.dropbtn')) {
   }
 }
 }
-function myDropFunction() {
+function myDropFunctions() {
   document.getElementById("myDropdownsAbout").classList.toggle("show");
 }
 window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
+if (!event.target.matches('.dropbtns')) {
 
   var dropdowns = document.getElementsByClassName("dropdown-content");
   var i;

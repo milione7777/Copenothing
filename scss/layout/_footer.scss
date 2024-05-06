@@ -1,48 +1,46 @@
 .footer {
-  width: 1540px;
-  height: 618px;
-  border-radius: 50px;
+  width: 360px;
+  height: 852px;
+  border-radius: 50px 50px 0 0;
   background: rgb(255, 255, 255);
   margin-top: 68px;
-  margin-left: 30px;
   padding: 20px;
-  margin-bottom: 30px;
 }
 
 .all-content {
-  display: flex;
   flex-wrap: wrap;
 }
 
 .content-footer {
   border-radius: 30px;
   background: rgb(245, 245, 245);
-  width: 856px;
-  height: 504px;
-  margin-left: 10px;
-  padding: 10px;
+  width: 320px;
+  height: 476px;
+  padding-top: 1px;
 }
 
 .card-list-footer {
-  width: 836px;
-  height: 138px;
+  width: 300px;
+  height: 216px;
   border-radius: 20px;
   background: rgb(255, 255, 255);
-  display: flex;
-  padding: 8px;
-  column-gap: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-top: 1px;
+  padding-left: 8px;
 }
 
 .card-footer {
-  width: 199px;
-  height: 122px;
+  width: 284px;
+  height: 44px;
   border-radius: 12px;
   background: rgb(245, 245, 245);
+  margin-top: 8px;
+  padding-top: 10px;
 }
 
 .text-footer {
   text-align: center;
-  margin-top: 50px;
   color: rgb(8, 28, 0);
   font-family: Krona One;
   font-size: 15px;
@@ -53,12 +51,13 @@
 .contact-footer {
   border-radius: 20px;
   background: rgb(255, 255, 255);
-  width: 836px;
-  height: 335px;
+  width: 300px;
+  height: 228px;
   margin-top: 12px;
-  padding-left: 263px;
   align-items: center;
-  padding-top: 96px;
+  padding-top: 45px;
+  padding-left: 15px;
+  margin-left: 10px;
 }
 
 .footer-contact-text {
@@ -67,15 +66,16 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  width: 310px;
+  width: 270px;
   text-align: center;
 }
 
 .button-contact {
-  width: 310px;
+  width: 270px;
+  height: 48px;
   border: none;
   border-radius: 150px;
-  padding: 12px 40px 12px 40px;
+  padding: 12px;
   background-color: rgb(135, 228, 100);
   color: rgb(8, 28, 0);
   font-family: Krona One;
@@ -86,25 +86,28 @@
 }
 
 .footer-data {
-  width: 1500px;
-  height: 64px;
+  width: 320px;
+  height: 160px;
   background-color: rgb(135, 228, 100);
   border-radius: 30px;
   margin-top: 10px;
-  display: flex;
-  padding: 0 40px;
+  padding: 20px;
   padding-top: 20px;
 }
 
 .left-data-footer {
-  display: flex;
   margin-left: auto;
 }
 
 .footer-data-text {
   color: rgb(8, 28, 0);
   font-family: Krona One;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
+}
+
+.footer-data-text + .footer-data-text  {
+  margin-top: 12px;
 }

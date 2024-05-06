@@ -1,24 +1,25 @@
-.card-list {
-  list-style: none;
-  display: flex;
-  column-gap: 20px;
-}
-
-.cards {
-  width: 370px;
-  height: 532px;
-  border-radius: 50px;
+.card-box-section {
+  width: 320px;
+  height: 436px;
+  border-radius: 30px;
   background: rgb(255, 255, 255);
-  padding: 12px;
-  margin-top: 28px;
+  margin: 0px 20px;
+  border: none;
+  overflow: hidden;
 }
 
-.text-card-item {
+.img-hou {
+  width: 299px;
+  height: 320px;
+  margin: 12px 12px 0 12px;
+}
+
+.text-hou-to-buy {
   color: rgb(8, 28, 0);
   font-family: Krona One;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 24px;
   text-align: center;
-  margin-top: 48px;
 }

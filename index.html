@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copenothing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="icon" type="image/x-icon" href="/img/logo.png" />
-  <link
-    rel="stylesheet"
-    href="node_modules/modern-normalize/modern-normalize.css"
-  />
-  <link rel="stylesheet" href="css/main.min.css" />
-  <body>
+  <body class="body">
     <header>
       <div class="container">
         <ul class="header-list">
@@ -53,10 +53,11 @@
                   <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
                 </svg>
               </li>
-              <li class="button-walet">
-                <p class="button-walet-style">
-                  <a class="text-walet-nav" href="#">Connect wallet</a>
-                </p>
+              <li class="burger-style">
+                <button class="header-button">CONNECT WALLET</button>
+                <div class="burger">
+                  <span></span>
+                </div>
               </li>
             </nav>
           </li>
@@ -87,74 +88,86 @@
             </div>
           </li>
           <li class="arrow">
-            <button class="button-arrow">
-              <svg width="9" height="14">
-                <use href="./sprite/symbol-defs.svg#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <button class="button-arrow">
-              <svg width="9" height="14">
-                <use href="./sprite/symbol-defs.svg#icon-right-arrow"></use>
-              </svg>
-            </button>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
           </li>
         </ul>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img
+                class="img-slide"
+                src="./img/caps-360.png"
+                alt="Зображення 1"
+              />
+              <ul class="description">
+                <li>
+                  <p class="text-slide">PEPKA CAP</p>
+                  <p class="price-slide">$28</p>
+                </li>
+                <li>
+                  <button class="button-shopping-bag">
+                    <svg width="16" height="20">
+                      <use
+                        href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="slide">
+              <img
+                class="img-slide"
+                src="./img/caps-360.png"
+                alt="Зображення 1"
+              />
+              <ul class="description">
+                <li>
+                  <p class="text-slide">PEPKA CAP</p>
+                  <p class="price-slide">$28</p>
+                </li>
+                <li>
+                  <button class="button-shopping-bag">
+                    <svg width="16" height="20">
+                      <use
+                        href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="slide">
+              <img
+                class="img-slide"
+                src="./img/caps-360.png"
+                alt="Зображення 1"
+              />
+              <ul class="description">
+                <li>
+                  <p class="text-slide">PEPKA CAP</p>
+                  <p class="price-slide">$28</p>
+                </li>
+                <li>
+                  <button class="button-shopping-bag">
+                    <svg width="16" height="20">
+                      <use
+                        href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul class="list-card">
-        <li class="card-box">
-          <div class="img">
-            <div class="border">20/50</div>
-          </div>
-          <ul class="card">
-            <li class="card-content">
-              <h3 class="title-product">PEPKA CAP</h3>
-              <p class="price-product">$28</p>
-            </li>
-            <button class="button-buy">
-              <svg width="16" height="20">
-                <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-              </svg>
-            </button>
-          </ul>
-        </li>
-        <li class="card-box">
-          <div class="img">
-            <p class="border-hit">HIT</p>
-          </div>
-          <ul class="card">
-            <li class="card-content">
-              <h3 class="title-product">PEPKA CAP</h3>
-              <p class="price-product">$28</p>
-            </li>
-            <button class="button-buy">
-              <svg width="16" height="20">
-                <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-              </svg>
-            </button>
-          </ul>
-        </li>
-        <li class="card-box">
-          <div class="img">
-            <div class="border">20/50</div>
-          </div>
-          <ul class="card">
-            <li class="card-content">
-              <h3 class="title-product">PEPKA CAP</h3>
-              <p class="price-product">$28</p>
-            </li>
-            <button class="button-buy">
-              <svg width="16" height="20">
-                <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-              </svg>
-            </button>
-          </ul>
-        </li>
-      </ul>
     </section>
     <section class="about">
-      <div class="container">
+      <div class="container container-about">
         <ul class="about-list">
-          <li class="about-item"><img src="/img/card-twitter.png" alt="" /></li>
+          <li class="about-item"><img src="/img/about-360.png" alt="" /></li>
           <li class="about-item">
             <h1 class="title-about">
               ABOUT <span class="color-text">COPENOTHING</span>
@@ -178,7 +191,7 @@
         </ul>
       </div>
     </section>
-    <section class="how-to-buy">
+    <section class="hou-to-buy">
       <div class="container">
         <ul class="position-button button-abouts">
           <li class="button-item">
@@ -197,41 +210,17 @@
             </button>
           </li>
         </ul>
-        <li class="card-list">
-          <ul class="cards">
-            <li class="card-item">
-              <img src="./img/Select product.png" alt="" />
-            </li>
-            <li class="card-item">
-              <p class="text-card-item">SELECT PRODUCT</p>
-            </li>
-          </ul>
-          <ul class="cards">
-            <li class="card-item">
-              <img src="./img/Add to cart.png" alt="" />
-            </li>
-            <li class="card-item">
-              <p class="text-card-item">ADD TO CARD</p>
-            </li>
-          </ul>
-          <ul class="cards">
-            <li class="card-item">
-              <img src="./img/Checkout.png" alt="" />
-            </li>
-            <li class="card-item">
-              <p class="text-card-item">CHECKOUT</p>
-            </li>
-          </ul>
-          <ul class="cards">
-            <li class="card-item">
-              <img src="./img/Payment.png" alt="" />
-            </li>
-            <li class="card-item">
-              <p class="text-card-item">PAYMENT</p>
+      </div>
+      <ul class="list-card">
+        <li class="card-box-section">
+          <img class="img-hou" src="./img/Select product.png" alt="" />
+          <ul class="slide-hou-to-buy">
+            <li>
+              <p class="text-hou-to-buy">SELECT PRODUCT</p>
             </li>
           </ul>
         </li>
-      </div>
+      </ul>
     </section>
     <section class="featured-item">
       <div class="container">
@@ -265,67 +254,42 @@
       </div>
       <ul class="list-card">
         <li class="card-box">
-          <div class="img">
+          <div class="img-news">
             <div class="border">20/50</div>
           </div>
-          <ul class="card">
-            <li class="card-content">
-              <h3 class="title-product">PEPKA CAP</h3>
-              <p class="price-product">$28</p>
+          <ul class="slid">
+            <li>
+              <p class="title-new-drop">PEPKA CAP</p>
+              <p class="price-new-drop">$28</p>
             </li>
-            <button class="button-buy">
-              <svg width="16" height="20">
-                <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-              </svg>
-            </button>
-          </ul>
-        </li>
-        <li class="card-box">
-          <div class="img">
-            <p class="border-hit">HIT</p>
-          </div>
-          <ul class="card">
-            <li class="card-content">
-              <h3 class="title-product">PEPKA CAP</h3>
-              <p class="price-product">$28</p>
+            <li>
+              <button type="button" class="button-new-drop">
+                <svg width="16" height="20px">
+                  <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
+                </svg>
+              </button>
             </li>
-            <button class="button-buy">
-              <svg width="16" height="20">
-                <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-              </svg>
-            </button>
-          </ul>
-        </li>
-        <li class="card-box">
-          <div class="img">
-            <div class="border">20/50</div>
-          </div>
-          <ul class="card">
-            <li class="card-content">
-              <h3 class="title-product">PEPKA CAP</h3>
-              <p class="price-product">$28</p>
-            </li>
-            <button class="button-buy">
-              <svg width="16" height="20">
-                <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-              </svg>
-            </button>
           </ul>
         </li>
       </ul>
     </section>
     <section class="about">
-      <div class="container">
+      <div class="container container-abouts">
         <ul class="about-listed">
+          <li class="about-item"><img src="/img/pond-360.png" alt="" /></li>
           <li class="about-item">
             <h1 class="title-about">
               TOKEN <span class="color-text">$PNDC</span>
             </h1>
             <h6 class="subtitle subtitle-about">
-              PNDC it's a token drived by early adopters of PEPE which according to the Pauly0x (founder) will change the game once and for all!
+              PNDC it's a token drived by early adopters of PEPE which according
+              to the Pauly0x (founder) will change the game once and for all!
             </h6>
             <div class="dropdown">
-              <button onclick="myDropFunction()" class="dropbtn dropbtn-color">
+              <button
+                onclick="myDropFunctions()"
+                class="dropbtns dropbtn-color"
+              >
                 <p class="text-about">TOKEN CONTACT</p>
                 <img src="./img/Vector.png" alt="" />
               </button>
@@ -334,28 +298,33 @@
                 <a href="#contact">LINK</a>
               </div>
             </div>
-            <li class="about-item"><img src="/img/Token-PNDC.png" alt="" /></li>
           </li>
         </ul>
       </div>
     </section>
     <section class="about">
-      <div class="container">
-        <ul class="about-list about-margin">
-          <li class="about-item"><img src="/img/Token-pepe.png" alt="" /></li>
+      <div class="container container-abouts">
+        <ul class="about-listed-pepe">
+          <li class="about-item"><img src="/img/pepe-360.png" alt="" /></li>
           <li class="about-item">
             <h1 class="title-about">
               TOKEN <span class="color-text">$PEPE</span>
             </h1>
-            <h6 class="subtitle subtitle-width">
-              PEPE is a deflationary memecoin launched on Ethereum. The cryptocurrency was created as a tribute to the Pepe the Frog internet meme, created by Matt Furie, which gained popularity in the early 2000s.
+            <h6 class="subtitle subtitle-about">
+              PEPE is a deflationary memecoin launched on Ethereum. The
+              cryptocurrency was created as a tribute to the Pepe the Frog
+              internet meme, created by Matt Furie, which gained popularity in
+              the early 2000s
             </h6>
-            <div class="dropdown">
-              <button onclick="myDropFunctione()" class="dropbtn dropbtn-color">
+            <div class="dropdown-pepe">
+              <button
+                onclick="myDropFunctions()"
+                class="dropbtns dropbtn-color"
+              >
                 <p class="text-about">TOKEN CONTACT</p>
                 <img src="./img/Vector.png" alt="" />
               </button>
-              <div id="Dropdown" class="dropdown-content dropbtn-width">
+              <div id="myDropdownsAbout" class="dropdown-content dropbtn-width">
                 <a href="#home">LINK</a>
                 <a href="#contact">LINK</a>
               </div>
@@ -369,21 +338,24 @@
         <ul class="position-card">
           <li class="card-li-item">
             <ul class="content-position">
-              <li><img class="img-item" src="./img/caps.png" alt="#"></li>
+              <li><img class="img-item" src="./img/caps.png" alt="#" /></li>
               <li class="content">
                 <p class="text-content">CAPS</p>
                 <button class="button-content">
-                  <img src="./img/left.png" alt="">
-                </button></li>
+                  <img src="./img/left.png" alt="" />
+                </button>
+              </li>
             </ul>
           </li>
           <li class="card-li-item">
             <ul class="content-position">
-              <li><img class="img-item" src="./img/t-shirts.png" alt="#"></li>
+              <li>
+                <img class="img-item" src="./img/t-shirts-360.png" alt="#" />
+              </li>
               <li class="content">
-                <p class="text-content">T SHIRTS</p>
+                <p class="text-contents">T SHIRTS</p>
                 <button class="button-content">
-                  <img src="./img/left.png" alt="">
+                  <img src="./img/left.png" alt="" />
                 </button>
               </li>
             </ul>
@@ -392,45 +364,50 @@
       </div>
     </section>
     <footer class="footer">
-     <ul class="all-content">
-      <li><img src="./img/footer-img.png" alt=""></li>
-      <li class="content-footer">
-        <ul>
-          <li>
-            <ul class="card-list-footer">
-              <li class="card-footer">
-                <p class="text-footer">SHOP</p>
-              </li>
-              <li class="card-footer">
-                <p class="text-footer">COPENOTHING</p>
-              </li>
-              <li class="card-footer">
-                <p class="text-footer">HOW TO BUY</p>
-              </li>
-              <li class="card-footer">
-                <p class="text-footer">TOKENS</p>
-              </li>
-            </ul>
-          </li>
-          <li class="contact-footer">
-            <p class="footer-contact-text">ARE THERE ANY ISSUES WITH THE DELIVERY OR PAYMENT CONFIRMATION?</p>
-            <button class="button-contact">CONTACT SUPPORT</button>
-          </li>
-        </ul>
-      </li>
-      <li class="footer-data">
-        <p class="footer-data-text">COPYRIGHT 2023 COPENOTHING. ALL RIGHTS RESERVED</p>
-        <ul class="left-data-footer">
-          <li>
-            <p class="footer-data-text">TERMS OF SERVICE</p>
-          </li>
-          <li>
-            <p class="footer-data-text">PRIVACY POLICY</p>
-          </li>
-        </ul>
-      </li>
-     </ul>
+      <ul class="all-content">
+        <li><img src="./img/footer-360.png" alt="" /></li>
+        <li class="content-footer">
+          <ul>
+            <li>
+              <ul class="card-list-footer">
+                <li class="card-footer">
+                  <p class="text-footer">SHOP</p>
+                </li>
+                <li class="card-footer">
+                  <p class="text-footer">COPENOTHING</p>
+                </li>
+                <li class="card-footer">
+                  <p class="text-footer">HOW TO BUY</p>
+                </li>
+                <li class="card-footer">
+                  <p class="text-footer">TOKENS</p>
+                </li>
+              </ul>
+            </li>
+            <li class="contact-footer">
+              <p class="footer-contact-text">
+                ARE THERE ANY ISSUES WITH THE DELIVERY OR PAYMENT CONFIRMATION?
+              </p>
+              <button class="button-contact">CONTACT SUPPORT</button>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-data">
+              <p class="footer-data-text">
+                TERMS OF SERVICE
+              </p>
+              <p class="footer-data-text">
+                PRIVACY POLICY
+              </p>
+              <p class="footer-data-text">
+              COPYRIGHT 2023 COPENOTHING. ALL RIGHTS RESERVED
+              </p>
+        </li>
+       </ul>
+      </ul>
     </footer>
     <script src="./js/dropdown.js"></script>
+    <script src="./js/header-modal.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

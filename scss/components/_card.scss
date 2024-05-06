@@ -1,43 +1,57 @@
 .card-list-item {
-    margin-top: 68px;
+  margin-top: 40px;
 }
 
 .card-li-item {
-  width: 760px;
-  height: 620px;
-  border-radius: 50px;
+  width: 328px;
+  height: 304px;
+  border-radius: 30px;
   background: rgb(255, 255, 255);
-  padding: 0 130px;
+  overflow: hidden;
+  padding-left: 58px;
+  margin-top: 20px;
 }
 
 .position-card {
-    display: flex;
-    column-gap: 20px;
+  column-gap: 20px;
 }
 
 .img-item {
-    width: 500px;
-    height: 500px;
+  width: 212px;
+  height: 212px;
 }
 
 .content {
   display: flex;
   column-gap: 20px;
+  align-items: center;
 }
 
 .text-content {
-  margin-left: 131px;
-  margin-top: 22px;
   color: rgb(8, 28, 0);
   font-family: Krona One;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-left: 17px;
+  align-items: center;
+}
+
+.text-contents {
+  color: rgb(8, 28, 0);
+  font-family: Krona One;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 20px;
 }
 
 .button-content {
   border-radius: 150px;
   background: rgb(135, 228, 100);
-  padding: 28px 40px 28px 40px;
+  width: 68px;
+  height: 48px;
   border: none;
+  margin-top: 20px;
 }
