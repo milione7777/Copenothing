@@ -10,6 +10,14 @@
   overflow: hidden;
   padding-left: 58px;
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    width: 720px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 976px;
+    height: 620px;
+  }
 }
 
 .position-card {
@@ -19,6 +27,16 @@
 .img-item {
   width: 212px;
   height: 212px;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 500px;
+    margin-left: 70px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 500px;
+    height: 500px;
+    margin-left: 205px;
+  }
 }
 
 .content {
@@ -36,6 +54,12 @@
   margin-top: 20px;
   margin-left: 17px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 210px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 330px;
+  }
 }
 
 .text-contents {
@@ -45,6 +69,12 @@
   font-weight: 400;
   line-height: 28px;
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    margin-left: 210px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 310px;
+  }
 }
 
 .button-content {
@@ -54,4 +84,8 @@
   height: 48px;
   border: none;
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    width: 104px;
+    height: 70px;
+  }
 }

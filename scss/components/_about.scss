@@ -1,3 +1,9 @@
+.dropdowns {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
 .about-list {
   margin-top: 68px;
   width: 360px;
@@ -6,16 +12,52 @@
   border-radius: 30px;
   padding: 20px;
   column-gap: 140px;
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+    height: 820px;
+    margin-left: 25px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 976px;
+    height: 1000px;
+    margin-left: 25px;
+  }
+}
+
+.about-img {
+  @media screen and (min-width: 360px) {
+    width: 320px;
+    height: 204px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 680px;
+    height: 476px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 936px;
+    height: 656px;
+  }
 }
 
 .title-about {
-  font-family: Krona One;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   width: 320px;
   text-align: center;
   margin-top: 28px;
+  @media screen and (min-width: 768px) {
+    width: 443px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-left: 130px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 443px;
+    margin-top: 40px;
+    margin-left: 266px;
+  }
 }
 
 .button-abouts {
@@ -36,6 +78,16 @@
   line-height: 24px;
   letter-spacing: 0%;
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    width: 576px;
+    margin-left: 52px;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 698px;
+    margin-left: 140px;
+    margin-top: 32px;
+  }
 }
 
 .button-about {
@@ -49,6 +101,13 @@
   padding: 20px 102px;
   column-gap: 8px;
   margin-top: 28px;
+  @media screen and (min-width: 768px) {
+    margin-left: 180px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 320px;
+    margin-top: 24px;
+  }
 }
 
 .container-about {
@@ -81,10 +140,20 @@
   border-radius: 30px;
   padding: 20px;
   column-gap: 220px;
+  @media screen and (min-width: 768px) {
+    width: 720px;
+    height: 808px;
+    margin-left: 25px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 976px;
+    height: 1020px;
+    margin-left: 25px;
+  }
 }
 
 .dropdown-pepe {
- margin-top: 50px;
+  margin-top: 50px;
 }
 
 .container-abouts {
@@ -93,6 +162,14 @@
 
 .subtitle-about {
   width: 320px;
+  @media screen and (min-width: 768px) {
+    width: 445px;
+    margin-left: 140px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 445px;
+    margin-left: 266px;
+  }
 }
 
 .dropbtns {
@@ -107,6 +184,19 @@
   height: 64px;
 }
 
+.pond {
+  width: 320px;
+  height: 204px;
+  @media screen and (min-width: 768px) {
+    width: 680px;
+    height: 476px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 936px;
+    height: 656px;
+  }
+}
+
 .text-about {
   color: rgb(8, 28, 0);
   font-family: Krona One;
@@ -119,6 +209,41 @@
   background-color: rgb(135, 228, 100);
   padding: 20px 65px;
   margin-top: 28px;
+  @media screen and (min-width: 768px) {
+    margin-left: 200px;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 333px;
+    margin-top: 40px;
+  }
+}
+
+.about-listed-pepe {
+  width: 360px;
+  height: 592px;
+  @media screen and (min-width: 768px) {
+    width: 720px;
+    height: 808px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 976px;
+    height: 1020px;
+  }
+}
+
+.text-pepe {
+  width: 320px;
+  height: 144px;
+  @media screen and (min-width: 768px) {
+    width: 590px;
+    height: 80px;
+    margin-left: 55px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 586px;
+    margin-left: 195px;
+  }
 }
 
 .dropbtn-width {

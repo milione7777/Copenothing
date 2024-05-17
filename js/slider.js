@@ -6,7 +6,7 @@ function showSlides(n) {
   if (n >= slides.length) {slideIndex = 0}
   if (n < 0) {slideIndex = slides.length - 1}
   for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = '';
+    slides[i].style.display = 'block';
   }
   slides[slideIndex].style.display = 'block';
 }

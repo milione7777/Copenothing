@@ -53,8 +53,10 @@
                   <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
                 </svg>
               </li>
+              <li class="button-style">
+                <button class="header-button"><a class="button-header-link" href="#">CONNECT WALLET</a></button>
+              </li>
               <li class="burger-style">
-                <button class="header-button">CONNECT WALLET</button>
                 <div class="burger">
                   <span></span>
                 </div>
@@ -65,11 +67,9 @@
       </div>
     </header>
     <section class="hero">
-      <div class="container">
         <button class="button-hero">
           <p class="text-hero"><a href="#">Shop now</a></p>
         </button>
-      </div>
     </section>
     <section class="featured-item">
       <div class="container">
@@ -167,7 +167,7 @@
     <section class="about">
       <div class="container container-about">
         <ul class="about-list">
-          <li class="about-item"><img src="./img/about-360.png" alt="" /></li>
+          <li class="about-item"><img class="about-img" src="./img/about-768.png" alt="" /></li>
           <li class="about-item">
             <h1 class="title-about">
               ABOUT <span class="color-text">COPENOTHING</span>
@@ -220,63 +220,121 @@
             </li>
           </ul>
         </li>
+        <li class="card-box-section card-768">
+          <img class="img-hou" src="./img/Add to cart.png" alt="" />
+          <ul class="slide-hou-to-buy">
+            <li>
+              <p class="text-hou-to-buy">ADD TO CARD</p>
+            </li>
+          </ul>
+        </li>
+        <li class="card-box-section card-768">
+          <img class="img-hou" src="./img/Checkout.png" alt="" />
+          <ul class="slide-hou-to-buy">
+            <li>
+              <p class="text-hou-to-buy">CHECKOUT</p>
+            </li>
+          </ul>
+        </li>
       </ul>
     </section>
     <section class="featured-item">
-      <div class="container">
-        <ul class="position-button button-abouts">
+      <div class="container news">
+        <ul class="position-button">
           <li class="button-item">
             <p class="featured-item-text">NEWS DROP</p>
             <div class="dropdown">
-              <button onclick="myDropFunction()" class="dropbtn">
+              <button onclick="myDropFunctions()" class="dropbtn">
                 <p class="text">ALL</p>
                 <img src="./img/Vector.png" alt="" />
               </button>
-              <div id="myDropdowns" class="dropdown-content">
+              <div id="myDropdownsAbout" class="dropdown-content">
                 <a href="#home">CAP</a>
                 <a href="#contact">T SHIRTS</a>
               </div>
             </div>
           </li>
           <li class="arrow">
-            <button class="button-arrow">
-              <svg width="9" height="14">
-                <use href="./sprite/symbol-defs.svg#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <button class="button-arrow">
-              <svg width="9" height="14">
-                <use href="./sprite/symbol-defs.svg#icon-right-arrow"></use>
-              </svg>
-            </button>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
           </li>
         </ul>
-      </div>
-      <ul class="list-card">
-        <li class="card-box">
-          <div class="img-news">
-            <div class="border">20/50</div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img
+                class="img-slide"
+                src="./img/caps-360.png"
+                alt="Зображення 1"
+              />
+              <ul class="description">
+                <li>
+                  <p class="text-slide">PEPKA CAP</p>
+                  <p class="price-slide">$28</p>
+                </li>
+                <li>
+                  <button class="button-shopping-bag">
+                    <svg width="16" height="20">
+                      <use
+                        href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="slide">
+              <img
+                class="img-slide"
+                src="./img/caps-360.png"
+                alt="Зображення 1"
+              />
+              <ul class="description">
+                <li>
+                  <p class="text-slide">PEPKA CAP</p>
+                  <p class="price-slide">$28</p>
+                </li>
+                <li>
+                  <button class="button-shopping-bag">
+                    <svg width="16" height="20">
+                      <use
+                        href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="slide">
+              <img
+                class="img-slide"
+                src="./img/caps-360.png"
+                alt="Зображення 1"
+              />
+              <ul class="description">
+                <li>
+                  <p class="text-slide">PEPKA CAP</p>
+                  <p class="price-slide">$28</p>
+                </li>
+                <li>
+                  <button class="button-shopping-bag">
+                    <svg width="16" height="20">
+                      <use
+                        href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="slid">
-            <li>
-              <p class="title-new-drop">PEPKA CAP</p>
-              <p class="price-new-drop">$28</p>
-            </li>
-            <li>
-              <button type="button" class="button-new-drop">
-                <svg width="16" height="20px">
-                  <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
     <section class="about">
       <div class="container container-abouts">
         <ul class="about-listed">
-          <li class="about-item"><img src="./img/pond-360.png" alt="" /></li>
+          <li class="about-item"><img class="pond"  src="./img/pond.png" alt="" /></li>
           <li class="about-item">
             <h1 class="title-about">
               TOKEN <span class="color-text">$PNDC</span>
@@ -285,7 +343,7 @@
               PNDC it's a token drived by early adopters of PEPE which according
               to the Pauly0x (founder) will change the game once and for all!
             </h6>
-            <div class="dropdown">
+            <div class="dropdowns">
               <button
                 onclick="myDropFunctions()"
                 class="dropbtns dropbtn-color"
@@ -304,19 +362,16 @@
     </section>
     <section class="about">
       <div class="container container-abouts">
-        <ul class="about-listed-pepe">
-          <li class="about-item"><img src="./img/pepe-360.png" alt="" /></li>
+        <ul class="about-listed about-listed-pepe">
+          <li class="about-item"><img class="pond"  src="./img/pepe.png" alt="" /></li>
           <li class="about-item">
             <h1 class="title-about">
               TOKEN <span class="color-text">$PEPE</span>
             </h1>
-            <h6 class="subtitle subtitle-about">
-              PEPE is a deflationary memecoin launched on Ethereum. The
-              cryptocurrency was created as a tribute to the Pepe the Frog
-              internet meme, created by Matt Furie, which gained popularity in
-              the early 2000s
+            <h6 class="subtitle subtitle-about text-pepe">
+              PEPE is a deflationary memecoin launched on Ethereum. The cryptocurrency was created as a tribute to the Pepe the Frog internet meme, created by Matt Furie, which gained popularity in the early 2000s.
             </h6>
-            <div class="dropdown-pepe">
+            <div class="dropdowns">
               <button
                 onclick="myDropFunctions()"
                 class="dropbtns dropbtn-color"
@@ -350,7 +405,7 @@
           <li class="card-li-item">
             <ul class="content-position">
               <li>
-                <img class="img-item" src="./img/t-shirts-360.png" alt="#" />
+                <img class="img-item" src="./img/t-shirts.png" alt="#" />
               </li>
               <li class="content">
                 <p class="text-contents">T SHIRTS</p>
@@ -365,7 +420,7 @@
     </section>
     <footer class="footer">
       <ul class="all-content">
-        <li><img src="./img/footer-360.png" alt="" /></li>
+        <li><img class="footer-img" src="./img/footer.png" alt="" /></li>
         <li class="content-footer">
           <ul>
             <li>
@@ -393,14 +448,14 @@
           </ul>
         </li>
         <li class="footer-data">
-              <p class="footer-data-text">
+          <p class="footer-data-text">
+            COPYRIGHT 2023 COPENOTHING. ALL RIGHTS RESERVED
+            </p>
+              <p class="footer-data-text text-poosition">
                 TERMS OF SERVICE
               </p>
               <p class="footer-data-text">
                 PRIVACY POLICY
-              </p>
-              <p class="footer-data-text">
-              COPYRIGHT 2023 COPENOTHING. ALL RIGHTS RESERVED
               </p>
         </li>
        </ul>
