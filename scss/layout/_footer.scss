@@ -5,15 +5,27 @@
   background: rgb(255, 255, 255);
   margin-top: 68px;
   padding: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
   @media screen and (min-width: 768px) {
     margin-left: 25px;
     width: 720px;
     height: 1032px;
     border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
   }
   @media screen and (min-width: 1024px) {
     width: 976px;
     height: 866px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1540px;
+    height: 618px;
+    margin: 0 auto;
+    margin-top: 68px;
   }
 }
 
@@ -28,10 +40,17 @@
     width: 936px;
     height: 344px;
   }
+  @media screen and (min-width: 1600px) {
+    width: 634px;
+    height: 504px;
+  }
 }
 
 .all-content {
   flex-wrap: wrap;
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
 }
 
 .content-footer {
@@ -47,6 +66,10 @@
   @media screen and (min-width: 1024px) {
     width: 936px;
     height: 398px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 856px;
+    height: 504px;
   }
 }
 
@@ -69,6 +92,10 @@
     display: flex;
     column-gap: 8px;
   }
+  @media screen and (min-width: 1600px) {
+    width: 836px;
+    height: 138px;
+  }
 }
 
 .card-footer {
@@ -84,6 +111,11 @@
   }
   @media screen and (min-width: 1024px) {
     width: 219px;
+    height: 122px;
+    padding-top: 49px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 199px;
     height: 122px;
     padding-top: 49px;
   }
@@ -117,6 +149,12 @@
     padding-left: 305px;
     width: 916px;
     height: 228px;
+  }
+  @media screen and (min-width: 1600px) {
+    padding-left: 263px;
+    padding-top: 96px;
+    width: 836px;
+    height: 335px;
   }
 }
 
@@ -164,6 +202,12 @@
   }
   @media screen and (min-width: 1024px) {
     width: 936px;
+    height: 64px;
+    display: flex;
+    padding: 20px 40px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1500px;
     height: 64px;
     display: flex;
     padding: 20px 40px;

@@ -12,17 +12,34 @@
   border-radius: 30px;
   padding: 20px;
   column-gap: 140px;
+  margin: 0 auto;
+  margin-top: 40px;
 
   @media screen and (min-width: 768px) {
     width: 720px;
     height: 820px;
     margin-left: 25px;
+    margin: 0 auto;
+    margin-top: 40px;
   }
   @media screen and (min-width: 1024px) {
     width: 976px;
     height: 1000px;
     margin-left: 25px;
+    margin: 0 auto;
+    margin-top: 60px;
   }
+  @media screen and (min-width: 1600px) {
+    width: 1540px;
+    height: 544px;
+    margin: 0 auto;
+    margin-top: 68px;
+    display: flex;
+  }
+}
+
+.about-item {
+  text-align: left;
 }
 
 .about-img {
@@ -37,6 +54,10 @@
   @media screen and (min-width: 1024px) {
     width: 936px;
     height: 656px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 600px;
+    height: 504px;
   }
 }
 
@@ -57,6 +78,23 @@
     width: 443px;
     margin-top: 40px;
     margin-left: 266px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 600px;
+    margin: 0;
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 96px;
+    text-align: left;
+  }
+}
+
+.title-about-token {
+  @media screen and (min-width: 1600px) {
+    width: 385px;
+    margin-top: 116px;
+    font-size: 40px;
+    line-height: 44px;
   }
 }
 
@@ -88,6 +126,12 @@
     margin-left: 140px;
     margin-top: 32px;
   }
+  @media screen and (min-width: 1600px) {
+    margin: 0 auto;
+    margin-top: 26px;
+    text-align: left;
+    width: 603px;
+  }
 }
 
 .button-about {
@@ -107,6 +151,13 @@
   @media screen and (min-width: 1024px) {
     margin-left: 320px;
     margin-top: 24px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin: 0;
+    margin-top: 28px;
+    width: 213px;
+    height: 64px;
+    padding: 20px 40px;
   }
 }
 
@@ -140,15 +191,28 @@
   border-radius: 30px;
   padding: 20px;
   column-gap: 220px;
+  margin: 0 auto;
+  margin-top: 20px;
   @media screen and (min-width: 768px) {
     width: 720px;
     height: 808px;
-    margin-left: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
   @media screen and (min-width: 1024px) {
     width: 976px;
     height: 1020px;
-    margin-left: 25px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1544px;
+    height: 544px;
+    margin: 0 auto;
+    margin-top: 68px;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 220px;
   }
 }
 
@@ -169,6 +233,12 @@
   @media screen and (min-width: 1024px) {
     width: 445px;
     margin-left: 266px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin: 0;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 32px;
   }
 }
 
@@ -195,6 +265,10 @@
     width: 936px;
     height: 656px;
   }
+  @media screen and (min-width: 1600px) {
+    width: 720px;
+    height: 504px;
+  }
 }
 
 .text-about {
@@ -217,6 +291,10 @@
     margin-left: 333px;
     margin-top: 40px;
   }
+  @media screen and (min-width: 1600px) {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }
 
 .about-listed-pepe {
@@ -229,6 +307,15 @@
   @media screen and (min-width: 1024px) {
     width: 976px;
     height: 1020px;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1544px;
+    height: 544px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 124px;
   }
 }
 
@@ -243,6 +330,10 @@
   @media screen and (min-width: 1024px) {
     width: 586px;
     margin-left: 195px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 586px;
+    margin-left: 0;
   }
 }
 
