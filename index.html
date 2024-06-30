@@ -20,10 +20,13 @@
   <body class="body">
     <header>
       <div class="container">
+        <div class="mask">
+          <div class="loader"></div>
+         </div>
         <ul class="header-list">
           <li class="logo"><img src="./img/logo.png" alt="logo" /></li>
           <li class="nav-header">
-            <nav class="nav">
+            <nav class="navigation">
               <li>
                 <p class="list-nav-text">
                   <a class="nav-text" href="#">HOME</a>
@@ -39,24 +42,36 @@
                   <a class="nav-text" href="#">ABOUT</a>
                 </p>
               </li>
-              <div id="app">
-                <div>
-                    <h1 class="text-modal">YOUR CART <span id="cart-count">(0)</span></h1>
-                </div>
-                <div id="product-container">
-                </div>
-                <div class="check">
-                <div class="total">
-                  <p class="discount">DISCOUNT <span id="discount">0</span></p>
-                  TOTAL <span id="total-amount">0.00</span>
-              </div>              
-                <button class="checkout-btn">CHECKOUT</button>
-                <div class="privacy-policy">
-                  <p class="text-privacy-policy">By clicking the button I agree with the <span class="span">Privacy Policy</span></p>
-                </div>
-                </div>
-                </div>
             </nav>
+            <nav class="nav">
+              <div id="app">
+                <div class="container-app">
+                  <div>
+                    <h1 class="text-modal">
+                      YOUR CART <span id="cart-count">(0)</span>
+                    </h1>
+                  </div>
+                  <div id="product-container"></div>
+                  <div class="check">
+                    <div class="total">
+                      <p class="discount">
+                        DISCOUNT <span id="discount">0</span>
+                      </p>
+                      TOTAL <span id="total-amount">0.00</span>
+                    </div>
+                    <button class="checkout-btn">CHECKOUT</button>
+                    <div class="privacy-policy">
+                      <p class="text-privacy-policy">
+                        By clicking the button I agree with the
+                        <span class="span">Privacy Policy</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </li>
+
           <li class="nav-web">
             <nav class="nav-web-site">
               <li class="search">
@@ -65,27 +80,36 @@
                 </svg>
               </li>
               <li class="shopping">
-                <svg width="16" height="20">
-                  <use href="./sprite/symbol-defs.svg#icon-shopping-bag"></use>
-                </svg>
+                <div class="burger">
+                  <svg class="svg_shopping" width="20" height="20">
+                    <use
+                      href="./sprite/symbol-defs.svg#icon-shopping-bag"
+                    ></use>
+                  </svg>
+                </div>
               </li>
               <li class="button-style">
-                <button class="header-button"><a class="button-header-link" href="#">CONNECT WALLET</a></button>
+                <button class="header-button">
+                  <a class="button-header-link" href="#">CONNECT WALLET</a>
+                </button>
               </li>
               <li class="burger-style">
-                <div class="burger">
-                  <span></span>
+                <div class="burgers">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
                 </div>
               </li>
             </nav>
           </li>
         </ul>
+        <div id="notifications" class="notifications-container"></div>
       </div>
     </header>
     <section class="hero">
-        <button class="button-hero">
-          <p class="text-hero"><a href="#">Shop now</a></p>
-        </button>
+      <button class="button-hero">
+        <p class="text-hero"><a href="#">Shop now</a></p>
+      </button>
     </section>
     <section class="featured-item">
       <div class="container">
@@ -122,7 +146,9 @@
                   <p class="price-slide">$28</p>
                 </li>
                 <li>
-                  <button class="button-shopping-bag add-product-btn">
+                  <button
+                    class="button-shopping-bag addToCartBtn add-product-btn"
+                  >
                     <svg width="16" height="20">
                       <use
                         href="./sprite/symbol-defs.svg#icon-shopping-bag"
@@ -144,7 +170,9 @@
                   <p class="price-slide">$28</p>
                 </li>
                 <li>
-                  <button class="button-shopping-bag add-product-btn">
+                  <button
+                    class="button-shopping-bag addToCartBtn add-product-btn"
+                  >
                     <svg width="16" height="20">
                       <use
                         href="./sprite/symbol-defs.svg#icon-shopping-bag"
@@ -166,7 +194,9 @@
                   <p class="price-slide">$28</p>
                 </li>
                 <li>
-                  <button class="button-shopping-bag add-product-btn">
+                  <button
+                    class="button-shopping-bag addToCartBtn add-product-btn"
+                  >
                     <svg width="16" height="20">
                       <use
                         href="./sprite/symbol-defs.svg#icon-shopping-bag"
@@ -183,7 +213,9 @@
     <section class="about">
       <div class="container container-about">
         <ul class="about-list">
-          <li class="about-item"><img class="about-img" src="./img/about-768.png" alt="" /></li>
+          <li class="about-item">
+            <img class="about-img" src="./img/about-768.png" alt="" />
+          </li>
           <li class="about-item">
             <h1 class="title-about">
               ABOUT <span class="color-text">COPENOTHING</span>
@@ -297,7 +329,9 @@
                   <p class="price-slide">$28</p>
                 </li>
                 <li>
-                  <button class="button-shopping-bag add-product-btn">
+                  <button
+                    class="button-shopping-bag addToCartBtn add-product-btn"
+                  >
                     <svg width="16" height="20">
                       <use
                         href="./sprite/symbol-defs.svg#icon-shopping-bag"
@@ -319,7 +353,9 @@
                   <p class="price-slide">$28</p>
                 </li>
                 <li>
-                  <button class="button-shopping-bag add-product-btn">
+                  <button
+                    class="button-shopping-bag addToCartBtn add-product-btn"
+                  >
                     <svg width="16" height="20">
                       <use
                         href="./sprite/symbol-defs.svg#icon-shopping-bag"
@@ -341,7 +377,9 @@
                   <p class="price-slide">$28</p>
                 </li>
                 <li>
-                  <button class="button-shopping-bag add-product-btn">
+                  <button
+                    class="button-shopping-bag addToCartBtn add-product-btn"
+                  >
                     <svg width="16" height="20">
                       <use
                         href="./sprite/symbol-defs.svg#icon-shopping-bag"
@@ -358,9 +396,11 @@
     <section class="about">
       <div class="container container-abouts">
         <ul class="about-listed">
-          <li class="about-item"><img class="pond"  src="./img/pond.png" alt="" /></li>
           <li class="about-item">
-            <h1 class="title-about  title-about-token">
+            <img class="pond" src="./img/pond.png" alt="" />
+          </li>
+          <li class="about-item">
+            <h1 class="title-about title-about-token">
               TOKEN <span class="color-text">$PNDC</span>
             </h1>
             <h6 class="subtitle subtitle-about">
@@ -387,13 +427,18 @@
     <section class="about">
       <div class="container container-abouts">
         <ul class="about-listed about-listed-pepe">
-          <li class="about-item"><img class="pond"  src="./img/pepe.png" alt="" /></li>
+          <li class="about-item">
+            <img class="pond" src="./img/pepe.png" alt="" />
+          </li>
           <li class="about-item">
             <h1 class="title-about">
               TOKEN <span class="color-text">$PEPE</span>
             </h1>
             <h6 class="subtitle subtitle-about text-pepe">
-              PEPE is a deflationary memecoin launched on Ethereum. The cryptocurrency was created as a tribute to the Pepe the Frog internet meme, created by Matt Furie, which gained popularity in the early 2000s.
+              PEPE is a deflationary memecoin launched on Ethereum. The
+              cryptocurrency was created as a tribute to the Pepe the Frog
+              internet meme, created by Matt Furie, which gained popularity in
+              the early 2000s.
             </h6>
             <div class="dropdowns">
               <button
@@ -474,20 +519,18 @@
         <li class="footer-data">
           <p class="footer-data-text">
             COPYRIGHT 2023 COPENOTHING. ALL RIGHTS RESERVED
-            </p>
-              <p class="footer-data-text text-poosition">
-                TERMS OF SERVICE
-              </p>
-              <p class="footer-data-text">
-                PRIVACY POLICY
-              </p>
+          </p>
+          <p class="footer-data-text text-poosition">TERMS OF SERVICE</p>
+          <p class="footer-data-text">PRIVACY POLICY</p>
         </li>
-       </ul>
       </ul>
     </footer>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/header-modal.js"></script>
+    <script src="./js/dropdown.js" type="module"></script>
+    <script src="./js/shoping-modal.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/basket.js"></script>
+    <script src="./js/message.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/loader.js"></script>
   </body>
 </html>

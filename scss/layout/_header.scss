@@ -1,10 +1,7 @@
-
-
 .logo {
   @media screen and (min-width: 1024px) {
     margin-top: 20px;
   }
-
 }
 
 .header-list {
@@ -19,6 +16,20 @@
   border-radius: 150px;
   background: rgb(255, 255, 255);
   column-gap: 5px;
+}
+
+.navigation {
+  margin-left: 545px;
+  display: flex;
+  border-radius: 150px;
+  background: rgb(255, 255, 255);
+  column-gap: 5px;
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
 }
 
 .nav-text {
@@ -65,6 +76,8 @@
 }
 
 .search {
+  width: 52px;
+  height: 52px;
   padding: 8px 15px;
   background: #fff;
   border-radius: 40px;
@@ -77,16 +90,17 @@
 }
 
 .shopping {
-  padding: 8px 15px;
+  width: 52px;
+  height: 52px;
+  padding: 17px;
+  padding-left: 0;
   background: #fff;
   border-radius: 40px;
   align-items: center;
   margin-right: 8px;
 }
 
-.shopping svg {
-  margin-top: 7px;
-}
+
 
 .button-walet-style {
   padding: 14px 32px;
@@ -133,9 +147,6 @@
   padding: 15px 14px;
   background: #fff;
   border-radius: 40px;
-  @media screen and (min-width: 1600px) {
-    display: none;
-  }
 }
 
 .open {
@@ -147,7 +158,7 @@
 }
 
 .burger {
-  display: none;
+  display: block;
   position: relative;
   align-items: center;
   justify-content: flex-end;
@@ -182,9 +193,10 @@
   content: "";
   position: absolute;
   height: 2px;
-  width: 100%;
+  width: 18px;
   background-color: #000;
   transition: all 0.3s ease 0s;
+  opacity: 0;
 }
 .burger::before {
   top: 0;
@@ -204,16 +216,14 @@
   top: 50%;
   transform: rotate(-45deg) translate(0, -50%);
   background: rgb(171, 171, 171);
+  opacity: 1;
 }
 .burger.active::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 60%);
   background: rgb(171, 171, 171);
+  opacity: 1;
 }
-@media (max-width: 1599px) {
-  .burger {
-    display: flex;
-  }
 
   .nav {
     display: none;
@@ -232,10 +242,6 @@
     overflow-y: auto;
     background: #fff;
     animation: burgerAnimation 0.4s;
-
-    @media screen and (min-width: 1600px) {
-      display: none;
-    }
   }
 
   .nav .list-nav-menu {
@@ -246,7 +252,7 @@
     flex-direction: column;
     row-gap: 32px;
   }
-}
+
 
 @keyframes burgerAnimation {
   from {
@@ -282,12 +288,21 @@
 }
 
 #app {
-  max-width: 800px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
   margin: 0 auto;
   padding: 20px;
-  @media screen and (min-width: 1600px) {
-    display: none;
-  }
+
+}
+
+.container-app {
+  margin: 0 auto;
+  width: 330px;
 }
 
 .quantity-container {
@@ -316,7 +331,6 @@
   align-items: self-start;
   padding: 10px;
   flex-wrap: wrap;
-
 }
 
 .product-name {
@@ -343,11 +357,13 @@
   margin-top: 16px;
   display: flex;
   align-items: center;
+
 }
 
 .size-container {
   display: flex;
   margin-right: 37px;
+  align-items: center;
 }
 
 .product-price {
@@ -376,6 +392,7 @@
   height: 106px;
   padding-left: 16px;
   padding-top: 28px;
+  margin-right: 50px;
 }
 
 .add-product-btn {
@@ -492,10 +509,59 @@
   margin-top: 20px;
 }
 
+.svg_shopping {
+  display: block;
+}
+
 .span {
   color: rgb(135, 228, 100);
 }
 
 .check {
-margin-top: 265px;
+  margin-top: 260px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.burgers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.burgers .line {
+  width: 100%;
+  height: 2.5px;
+  background-color: #333;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+
+.nav {
+  display: none;
+}
+
+.burgers.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burgers.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgers.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav.open {
+  display: block;
 }

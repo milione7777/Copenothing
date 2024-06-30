@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const addProductBtn = document.querySelector(".add-product-btn");
+  const addProductBtn = document.querySelectorAll(".add-product-btn");
   const productContainer = document.getElementById("product-container");
   const discountSpan = document.getElementById("discount");
   const totalAmountSpan = document.getElementById("total-amount");
@@ -8,14 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let discount = 0;
   let total = 0;
 
-  addProductBtn.addEventListener("click", () => {
-    const product = createProduct("PEPE CAP", 50, "./img/caps-360.png");
-    productContainer.appendChild(product);
-    total += 50;
-    updateTotals();
-    updateCartCount();
-    saveToLocalStorage();
-  });
+  addProductBtn.forEach(button => {
+    button.addEventListener("click", () => {
+        const product = createProduct("PEPE CAP", 50, "./img/caps-360.png");
+        productContainer.appendChild(product);
+        total += 50;
+        updateTotals();
+        updateCartCount();
+        saveToLocalStorage();
+    });
+});
 
   function createProduct(name, price, imageUrl) {
     const product = document.createElement("div");
